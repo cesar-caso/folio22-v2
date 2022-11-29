@@ -243,7 +243,7 @@ FOOTER
 ***********/
 
 .footer {
-  width: auto;
+  width: 100%;
   height: auto;
   font-size: var(--fs-s);
 }
