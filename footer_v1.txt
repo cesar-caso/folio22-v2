@@ -1,0 +1,46 @@
+<!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <!-- FOOTER > NAVBAR -->
+        <nav class="navbar">
+            
+            <div class="navbar__contact center">
+                <ul>
+                    <li class="footer__contact--link">
+                        <a href="mailto:contact@cesarcaso.eu">contact@cesarcaso.eu</a>
+                    </li>
+                    <!-- <li class="footer__contact--link">
+                        <p>Currently based in <a href="https://www.google.es/maps/place/Huelva/@37.270931,-6.97471,13z/data=!3m1!4b1!4m5!3m4!1s0xd11cfe6d744284b:0xd82baac110b40f83!8m2!3d37.261421!4d-6.9447224?hl=es" target="_blank">Huelva</a></p>
+                    </li> -->
+                </ul> 
+            </div>
+
+            <div class="navbar__social center">
+                <ul>
+                    <li class="navbar__social--link">
+                        <a href="https://www.behance.net/csarcaso" target="_blank">Behance</a>
+                    </li>
+                    <li class="navbar__social--link">
+                        <a href="https://open.spotify.com/user/cesarcaso-es/playlist/7MI1PKSnDyLN5sLtBRz4VV?si=6SNMTIrDQ0-Om9KlpHewmQ" target="_blank">Spotify</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar__credits center">
+                <ul>
+                    <li>
+                        <p>2022/v1.2</p>
+                    </li>
+                    <li>
+                        <p>Dev by myself, be patient</p>
+                    </li>
+                </ul> 
+            </div>
+        </nav>
+        <!-- END FOOTER > NAVBAR -->
+
+        <div id="contact" class="navbar__logo text p-top p-bottom">
+            <img class="navbar__logo--img" src="img/shamir-logo.svg" alt="César Caso's logo">
+        </div>
+        
+    </footer>
+    <!-- END FOOTER -->

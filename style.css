@@ -1,0 +1,290 @@
+/***********
+CSS STYLESHEET --> "CÉSAR CASO - FOLIO 22", V1.1
+28/03/2022
+
+- MOBILE FIRST
+- BEM
+***********/
+
+/***********
+GENERAL
+***********/
+
+@font-face {
+  font-family: "AzeretMono-VF";
+  src: url("AzeretMonoVF-1.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+:root {
+  /* O.D.D. PALETTE */
+  --c-white: #f9f8f5;
+  --c-dark: #212121;
+  --c-grey: #D0CFCD;
+  --c-1: #3EB489;
+  --c-2: #B99E94;
+  --c-3: #69A9E6;
+  /* FONT FAMILY */
+  --ff-heading: "AzeretMono-VF", sans-serif;
+  --ff-paragraph: "AzeretMono-VF", monospace;
+  /* FONT SIZE */
+  --fs-s: 1.6rem;
+  --fs-m: 2.4rem;
+  --fs-l: 4.2rem;
+  /* FONT WEIGHT */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px */
+  color: var(--c-white);
+  background: var(--c-dark);
+  font-family: var(--ff-heading);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(95%);
+  height: min-content;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+
+/***********
+SPECIFICS
+***********/
+
+.title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-s);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.p-top {
+  padding-top: 4rem;
+}
+
+.p-top-1 {
+  padding-top: 1rem;
+}
+
+.p-bottom {
+  padding-bottom: 2rem;
+}
+
+.p-6-2 {
+  padding: 6rem 2rem 0rem 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.mint {
+  color: var(--c-1);
+}
+
+/***********
+LANDING
+***********/
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--c-1);
+  color: var(--c-dark);
+}
+
+.header-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2.4rem;
+}
+
+.header-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.header-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 2.4rem;
+}
+
+.landing__grid {
+  display: grid;
+  grid-template-rows: repeat(auto, 1fr);
+  margin-top: 5rem;
+  gap: 10rem;
+  padding: 0 0 10rem 0;
+}
+
+.grid__project {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+/* Desktop 1440px */
+
+@media (min-width: 768px) {
+
+   .header-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    height: 50rem;
+  }
+
+  .header-info_title {
+    font-size: var(--fs-l);
+    font-weight: var(--fw-semibold);
+  }
+  .header-info_paragraph {
+    font-size: var(--fs-m);
+    font-weight: var(--fw-regular);
+  }
+
+  .header-about {
+    padding: 0 28.8rem;
+    gap: 4.8rem;
+  }
+
+  .header-contact {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+  }
+
+  .landing__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 4rem;
+    row-gap: 8rem;
+    padding: 0rem 0 6rem 0;
+  }
+  .grid__project:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease-in-out;
+  }
+}
+
+/***********
+PROJECTS
+***********/
+
+.projects {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  text-align: left;
+}
+
+.projects__photo--grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.projects__photo--description,
+.projects__poisson--description {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .projects__photo--grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/***********
+FOOTER
+***********/
+
+.footer {
+  width: auto;
+  height: auto;
+  font-size: var(--fs-s);
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2.4rem 0;
+}
+
+#mail-link {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+#shamir-logo {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    width: auto;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .footer-button {
+    margin: 0;
+  }
+}
